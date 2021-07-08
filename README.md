@@ -25,8 +25,8 @@
         [region]:部署区域，当前只能指定单个，多个请使用批处理：参考cdk-deploy-multiRegion-to.bat
         [apply_nums]:当前region下部署堆栈数目，一般在test环境使用。
 
-        使用示例：cdk-synth-to.bat IbuTestNetworkAwsStack VPC TEST ap-southeast-2 1
-        业务含义：生成IbuTestNetworkAwsStack堆栈对应的CloudFormation模板并在控制台打印
+        使用示例：cdk-synth-to.bat TestNetworkAwsStack VPC TEST ap-southeast-2 1
+        业务含义：生成TestNetworkAwsStack堆栈对应的CloudFormation模板并在控制台打印
 
 ### 1.3 cdk-deploy-to.bat：生成CloudFormation模板并部署到远端
         使用方法：cdk-deploy-to.bat [stack_name] [type] [environment] [region] [apply_nums]
@@ -37,7 +37,7 @@
         [apply_nums]:当前region下部署堆栈数目，一般在test环境使用。
 
         使用示例：cdk-deploy-to.bat --all VPC TEST ap-southeast-2 2
-        业务含义：生成IbuTestNetworkAwsStack-1/-2堆栈对应的CloudFormation模板并部署到ap-southeast-2 区域下
+        业务含义：生成TestNetworkAwsStack-1/-2堆栈对应的CloudFormation模板并部署到ap-southeast-2 区域下
     
 ### 1.4 cdk-destroy-to.bat：销毁CloudFormation模板并释放远端资源
         使用方法：cdk-destroy-to.bat [stack_name] [type] [environment] [region] [apply_nums]
@@ -48,7 +48,7 @@
         [apply_nums]:当前region下堆栈数目，一般在test环境使用。
 
         使用示例：cdk-destroy-to.bat --all VPC TEST ap-southeast-2 2
-        业务含义：销毁ap-southeast-2 区域下 IbuTestNetworkAwsStack-1/-2 CloudFormation模板对应资源
+        业务含义：销毁ap-southeast-2 区域下 TestNetworkAwsStack-1/-2 CloudFormation模板对应资源
     
 ### 1.5 cdk-deploy-multiRegion-to.bat：deploy批处理脚本，适用于单模板多region部署
 
